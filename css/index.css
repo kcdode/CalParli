@@ -1,0 +1,17 @@
+body {
+  background-image: url("../img/bg.jpg");
+  background-color: #ffffff;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+#logo {
+  width: 40%;
+
+  /* Center Align*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+

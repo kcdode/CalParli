@@ -1,0 +1,19 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Kevin Chang -- Lead Web Developer, Designed -- kev.chang@berkeley.edu
+    Trevor Greenan -- Lead Designer -- tgreenan@berkeley.edu
+    <name> -- <role> -- <twitter>
+
+# THANKS
+
+    Everyone on our team for helping make us what we are.
+    Everyone in NPDA for making the event what it is.
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5
+    PHP
+    Apache Server Configs, jQuery, Modernizr, Normalize.css
