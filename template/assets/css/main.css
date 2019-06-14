@@ -3740,7 +3740,7 @@ input, select, textarea {
 			}
 
 			.wrapper.style6:before {
-				box-shadow: inset 0 -1px 0 0 #003262, 0 1px 0 0 ##003262;
+				box-shadow: inset 0 -1px 0 0 #003262, 0 1px 0 0 #003262;
 			}
 
 			.wrapper.style6:after {

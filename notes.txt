@@ -1,2 +1,10 @@
+
 - Try to use SVGs (and maybe SVG animations?) for logo and such.
 - Sticky navbar: https://www.w3schools.com/howto/howto_js_sticky_header.asp or https://stackoverflow.com/questions/51913908/move-navbar-from-bottom-to-top-of-browser
+
+
+
+TODO:
+- Configure Apache and 404 (.htaccess)
+- Refactor the CSS
+- Fix the hardcoded margins on the navbar
