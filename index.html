@@ -5,12 +5,12 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="css/index.css"/>
+		<link rel="stylesheet" href="css/common.css"/>
 		<link rel="stylesheet" href="css/main.css"/>
 		<link rel="stylesheet" href="css/normalize.css"/>
 		<link rel="stylesheet" href="https://use.typekit.net/pzz4hxb.css">
 		<script type="text/javascript" src="js/vendor/jquery-3.3.1.min.js"></script>
 		<script src="js/main.js"></script>
-		<script src="js/submit.js"></script>
 
 		<!--    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>-->
     </head>
@@ -59,28 +59,22 @@
 				please feel free to contact us and we will get back to you as soon as we can. Go Bears! </p>
 			<form method="POST">
 				<label for="name">Name</label>
-				 <input class="type" type="text" name="name" id="name" />
+				 <input class="field" type="text" name="name" id="name" />
 				<label for="email">Email</label>
-				 <input class="type" type="email" name="email" id="email" />
+				 <input class="field" type="email" name="email" id="email" />
 				<label for="message">Message</label>
-				 <textarea class="type" name="message" id="message" rows="4"></textarea>
-<!--				<input type="submit" name="submit.btm" onclick="SubmitFormData()" value="Send Message" />-->
+				 <textarea class="field" name="message" id="message" rows="4"></textarea>
 				<input type="submit" name="submit.btm" onclick="SubmitFormData()" value="Send Message!" />
 
 			</form>
-			<ul class="social-media">
-
-			</ul>
-
 			<ul class="ocf">
 				<li> <a href="https://www.ocf.berkeley.edu">
 					<img src="http://www.ocf.berkeley.edu/hosting-logos/ocf-hosted-penguin.svg"
-						 alt="Hosted by the OCF" style="border: 0;" />  </a>
-				</li>
+						 alt="Hosted by the OCF" style="border: 0;" />  </a> </li>
 				<li>We are a student group acting independently of the University of California.
 					We take full responsibility for our organization and this web site. </li>
-
 			</ul>
+
 			<ul class="copyright">
 				<li>&copy; Parlimentary Debate at Berkeley. All rights reserved.</li>
 				<li> Webmaster: <a href="mailto:kev.chang@berkeley.edu">Kevin Chang</a></li>

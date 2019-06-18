@@ -1,41 +1,36 @@
-var stickyHeight = null;
-var navbarMargin = 0;
-var marginAdded = false;
-
-// Get trigger height and 'replacement' margin for sticky bar
-document.addEventListener('DOMContentLoaded', function () {
-	stickyHeight = document.getElementById("nav").offsetTop;
-	navbarMargin = $('.navbar').outerHeight(true);
-});
-
-
 $(window).scroll(
-
 	function () {
-
-		var navContainer = $('.navbar');
 		var scrolled = $(window).scrollTop();
 		var scale = 300.0; // lower for faster blur, higher for slower
-		if (scrolled < 1000) {
+		if (scrolled < $(window).height()) {
 			opacityVal = (scrolled / scale);
 			$('.blurred-bg').css('opacity', opacityVal);
 		}
-
-
-		if (window.pageYOffset > stickyHeight) {
-			navContainer.addClass('sticky');
-			// add margin only once
-			if (!marginAdded) {
-				$('.article').css('margin-top', '+=' + navbarMargin + 'px');
-				marginAdded = true;
-			}
-		} else {
-			navContainer.removeClass('sticky');
-			if (marginAdded) {
-				$('.article').css('margin-top', '-=' + navbarMargin + 'px');
-				marginAdded = false;
-			}
-		}
 	}
 );
+
+function SubmitFormData() {
+
+	var name = $("#name").val();
+	var email = $("#email").val();
+	var message = $("#message").val();
+
+	if (valForm(name, email, message)) {
+		$.post("js/mail.php", {name: name, email: email, message: message},
+			function (data) {
+				$('#results').html(data);
+				$('#myForm')[0].reset();
+			});
+		alert('Thank you! We\'ll be in contact shortly. Please click \'OK\' to finish submitting. ');
+	} else {
+		alert('Form validation failed! Please try again');
+	}
+}
+
+function valForm(name, email, message) {
+	var re = /^[a-zA-Z0-9\-_]+(\.[a-zA-Z0-9\-_]+)*@[a-z0-9]+(\-[a-z0-9]+)*(\.[a-z0-9]+(\-[a-z0-9]+)*)*\.[a-z]{2,4}$/;
+	return re.test(String(email).toLowerCase())
+		&& name.length > 0 && message.length > 0;
+}
+
 
