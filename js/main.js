@@ -1,10 +1,12 @@
 $(window).scroll(
 	function () {
 		var scrolled = $(window).scrollTop();
-		var scale = 300.0; // lower for faster blur, higher for slower
-		if (scrolled < $(window).height()) {
-			opacityVal = (scrolled / scale);
-			$('.blurred-bg').css('opacity', opacityVal);
+		var scale = 25.0; // lower for faster blur, higher for slower
+
+		// blurred by increments since continuous blur is resource-intensive
+		if (scrolled < $(window).height() && scrolled%4 === 0) {
+			$('.bg').css(
+				{filter: "blur(" + (scrolled/scale) + "px )"});
 		}
 	}
 );

@@ -11,33 +11,80 @@ p {
 #join {
 	text-transform: uppercase;
 	width: 60%;
-	background: linear-gradient(to right, #6AC9C9, #ffffff);
+	background-image: linear-gradient(to right, #6AC9C9 0%, #AADFF0 51%, #6AC9C9 100%);
+	background-size: 200% auto;
 	border: 1px solid white;
 	border-radius: 32px;
-	padding: 12px
+	padding: 12px;
+	transition-duration: .5s;
+}
+
+#join:hover {
+	background-position: right center;
+	border: 2px #F3776D solid;
+}
+
+.ss-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.arrow {
+	width: auto;
+	height: 40%;
+	margin: auto 0 auto 0;
+	background: none;
+	border: none;
+	border-radius: 64px;
+	transition-duration: .3s;
+}
+
+.arrow:hover {
+	background: #F3776D;
+	border: 1px #F3776D solid;
+
+	color: white;
 }
 
 .slideshow {
-	width: 80%;
-	margin: 0 auto 0 auto;
+	width: 65vw;
+	margin: 0;
 }
 
 .slideshow img {
-	max-width: 400px;
+	max-width: 100%;
 	max-height: 400px;
 	display: none;
 }
 
 #first { display: inline-block; }
 
-/*.test img{*/
-/*	max-width: 400px;*/
-/*	max-height: 400px;*/
-/*}*/
 
-.short {
+
+.short-hr {
 	width: 70%;
 	margin: 2em auto 2em auto;
+}
+
+@media screen and (orientation: portrait) {
+
+	.content {
+		margin: 25vh 0 5vh 0;
+		width: 100%;
+	}
+	.arrow {
+		font-size: 3em;
+		border-radius: 0;
+
+	}
+	
+}
+
+@media screen and (max-width: 480px) {
+	.content {
+		margin-top: 15vh;
+	}
 }
 
 
