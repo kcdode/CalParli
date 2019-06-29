@@ -1,0 +1,94 @@
+$primary: #6AC9C9;
+$secondary: #F3776D;
+$tertiary: #AADFF0;
+
+.content {
+	margin: 50vh 5% 8vh 5%;
+
+	p {
+		width: 80%;
+		text-align: center;
+		margin: 1em auto 1em auto;
+	}
+}
+
+
+
+#join {
+	&:hover {
+		background-position: right center;
+		border: 2px $secondary solid;
+	}
+
+	text-transform: uppercase;
+	width: 60%;
+	background-image: linear-gradient(to right, $primary 0%, $tertiary 51%, $primary 100%);
+	background-size: 200% auto;
+	border: 1px solid white;
+	border-radius: 32px;
+	padding: 12px;
+	transition-duration: .5s;
+}
+
+
+.ss-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+
+	.arrow {
+		&:hover {
+			background: $secondary;
+			border: 1px $secondary solid;
+			color: white;
+		}
+		width: auto;
+		height: 40%;
+		margin: auto 0 auto 0;
+		background: none;
+		border: none;
+		border-radius: 64px;
+		transition-duration: .3s;
+	}
+
+	.slideshow {
+		width: 65vw;
+		margin: 0;
+
+		img {
+			max-width: 100%;
+			max-height: 400px;
+			display: none;
+		}
+	}
+
+	#first { display: inline-block; } /* Display first image on pageload */
+
+}
+
+.short-hr {
+	width: 70%;
+	margin: 2em auto 2em auto;
+}
+
+@media screen and (orientation: portrait) {
+
+	.content {
+		margin: 25vh 0 0 0;
+		width: 100%;
+	}
+	.arrow {
+		font-size: 3em;
+		border-radius: 0;
+
+	}
+
+}
+
+@media screen and (max-width: 480px) {
+	.content {
+		margin-top: 15vh;
+	}
+}
+
+

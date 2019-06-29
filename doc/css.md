@@ -52,3 +52,10 @@ styles:
 * and more...
 
 These styles are included in [main.css](https://github.com/h5bp/html5-boilerplate/blob/master/dist/css/main.css). See the [main.css](https://github.com/h5bp/main.css) project [documentation](https://github.com/h5bp/main.css/blob/master/README.md#features) for a full discussion of these styles. 
+
+## SCSS
+
+I've written all of the website's CSS in terms of SCSS, which provides various useful QoL tweaks for writing CSS, such as nesting selectors and variables. Only the normalization files are left in css as they are boilerplates. 
+When you edit this site's code, I recommend using an IDE with an SCSS -> CSS auto-compiler (I use IDEA with npm (to install SASS) and the File Wathcer's plugin with an SCSS config). Frankly, there's probably many features you could probably use to further cleanup this code (inheritance, mixins, etc) but that's a you project !
+
+Last edited by Kevin Chang on June 29, 2019. 
