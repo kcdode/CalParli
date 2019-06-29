@@ -46,6 +46,8 @@
 		<button id="join" onclick="window.location.href = 'https://www.google.com';">JOIN HERE</button>
 		<hr>
 
+		<!-- !!! Keep all images the same resolution to avoid the slideshow
+		changing in size (or add CSS/JS restraints on img size -->
 		<div class="ss-container">
 
 			<button class="left arrow" onclick="move(-1)">&#10094;</button>
@@ -64,38 +66,41 @@
 		<h2>About the Team</h2>
 		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
 		</p>
+
+
 		<div class="contact-form">
 
-			<h2 class="major">Get in touch with the Team!</h2>
-			<p>Thank you for your interest in Parliamentary Debate at Berkeley. If you have any questions not answered on our website,
-				please feel free to contact us and we will get back to you as soon as we can. Go Bears! </p>
-			<form method="POST">
-				<label for="name">Name</label>
-				<input class="field" type="text" name="name" id="name" />
-				<label for="email">Email</label>
-				<input class="field" type="email" name="email" id="email" />
-				<label for="message">Message</label>
-				<textarea class="field" name="message" id="message" rows="4"></textarea>
-				<input type="submit" name="submit.btm" onclick="SubmitFormData()" value="Send Message!" />
+			<h2 id="click" class="major">Click to Open Contact Form!</h2>
+			<div id="expand" class="expand">
+				<p>Thank you for your interest in Parliamentary Debate at Berkeley. If you have any questions not answered on our website,
+					please feel free to contact us and we will get back to you as soon as we can. Go Bears! </p>
+				<form method="POST">
+					<label for="name">Name</label>
+					<input class="field" type="text" name="name" id="name" />
+					<label for="email">Email</label>
+					<input class="field" type="email" name="email" id="email" />
+					<label for="message">Message</label>
+					<textarea class="field" name="message" id="message" rows="4"></textarea>
+					<input type="submit" name="submit.btm" onclick="SubmitFormData()" value="Send Message!" />
 
-			</form>
-			<ul class="ocf">
-				<li> <a href="https://www.ocf.berkeley.edu">
-					<img src="http://www.ocf.berkeley.edu/hosting-logos/ocf-hosted-penguin.svg"
-						 alt="Hosted by the OCF" style="border: 0;" />  </a> </li>
-				<li>We are a student group acting independently of the University of California.
-					We take full responsibility for our organization and this web site. </li>
-			</ul>
+				</form>
+				<ul class="ocf">
+					<li> <a href="https://www.ocf.berkeley.edu">
+						<img src="http://www.ocf.berkeley.edu/hosting-logos/ocf-hosted-penguin.svg"
+							 alt="Hosted by the OCF" style="border: 0;" />  </a> </li>
+					<li>We are a student group acting independently of the University of California.
+						We take full responsibility for our organization and this web site. </li>
+				</ul>
 
-			<ul class="copyright">
-				<li>&copy; Parlimentary Debate at Berkeley. All rights reserved.</li>
-				<li> Webmaster: <a href="mailto:kev.chang@berkeley.edu">Kevin Chang</a></li>
-				<li><a href="https://www.facebook.com/ParliDebateAtBerkeley/">Facebook</a></li>
-				<li><a href="https://www.instagram.com/calparli/">Instagram</a></li>
-			</ul>
+				<ul class="copyright">
+					<li>&copy; Parlimentary Debate at Berkeley. All rights reserved.</li>
+					<li> Webmaster: <a href="mailto:kev.chang@berkeley.edu">Kevin Chang</a></li>
+					<li><a href="https://www.facebook.com/ParliDebateAtBerkeley/">Facebook</a></li>
+					<li><a href="https://www.instagram.com/calparli/">Instagram</a></li>
+				</ul>
+			</div>
 
 		</div>
-
 
 
 	</section>

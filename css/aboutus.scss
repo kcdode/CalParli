@@ -1,3 +1,7 @@
+$primary: #6AC9C9;
+$secondary: #F3776D;
+$tertiary: #AADFF0;
+
 .content {
 	margin: 50vh 5% 8vh 5%;
 }
@@ -9,9 +13,15 @@ p {
 }
 
 #join {
+
+	:hover {
+		background-position: right center;
+		border: 2px $secondary solid;
+	}
+
 	text-transform: uppercase;
 	width: 60%;
-	background-image: linear-gradient(to right, #6AC9C9 0%, #AADFF0 51%, #6AC9C9 100%);
+	background-image: linear-gradient(to right, $primary 0%, $tertiary 51%, $primary 100%);
 	background-size: 200% auto;
 	border: 1px solid white;
 	border-radius: 32px;
@@ -19,10 +29,6 @@ p {
 	transition-duration: .5s;
 }
 
-#join:hover {
-	background-position: right center;
-	border: 2px #F3776D solid;
-}
 
 .ss-container {
 	display: flex;
@@ -31,6 +37,11 @@ p {
 }
 
 .arrow {
+	:hover {
+		background: $secondary;
+		border: 1px $secondary solid;
+		color: white;
+	}
 	width: auto;
 	height: 40%;
 	margin: auto 0 auto 0;
@@ -40,22 +51,16 @@ p {
 	transition-duration: .3s;
 }
 
-.arrow:hover {
-	background: #F3776D;
-	border: 1px #F3776D solid;
-
-	color: white;
-}
 
 .slideshow {
 	width: 65vw;
 	margin: 0;
-}
 
-.slideshow img {
-	max-width: 100%;
-	max-height: 400px;
-	display: none;
+	img {
+		max-width: 100%;
+		max-height: 400px;
+		display: none;
+	}
 }
 
 #first { display: inline-block; }
@@ -77,7 +82,7 @@ p {
 		border-radius: 0;
 
 	}
-	
+
 }
 
 @media screen and (max-width: 480px) {

@@ -1,7 +1,6 @@
 var index = 1;
 
 function move(n) {
-	console.log("test");
 	show(index += n);
 }
 
