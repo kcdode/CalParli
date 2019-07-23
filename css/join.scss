@@ -3,7 +3,7 @@ $secondary: #F3776D;
 $tertiary: #AADFF0;
 
 .content {
-	margin: 50vh 5% 8vh 5%;
+	margin: 50vh 7% 8vh 7%;
 
 	p {
 		width: 80%;
@@ -17,7 +17,7 @@ $tertiary: #AADFF0;
 #join {
 	&:hover {
 		background-position: right center;
-		border: 2px $secondary solid;
+		border: 1px $primary solid;
 	}
 
 	text-transform: uppercase;

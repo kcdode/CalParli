@@ -1,5 +1,5 @@
 
-// jQuery for
+// jQuery for aboutus tournament page accordions
 
 $(document).ready(function() {
 	var acc = document.getElementsByClassName('panel');

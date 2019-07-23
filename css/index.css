@@ -1,10 +1,10 @@
 .content {
-  margin: 60vh 5% 8vh 5%;
+  margin: 60vh 7% 8vh 7%;
 }
 
 #logo {
-  width: 40%;
-  margin: 10vh auto 10vh auto;
+  width: 30%;
+  margin: 8vh auto 8vh auto;
   display: block;
 }
 
@@ -47,17 +47,17 @@
 
   .picture {
     float: none;
-    width: 80%;
+    width: 80% !important;
     margin: 1em auto 1em auto;
   }
 
   .picture img {
-    margin: auto;
+    margin: 0 !important;
   }
 
   .blurb {
     text-align: center;
-    width: 80%;
+    width: 80% !important;
     float: none;
     margin: auto;
   }

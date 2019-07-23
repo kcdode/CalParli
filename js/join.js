@@ -1,3 +1,5 @@
+// slideshow
+
 var index = 1;
 
 function move(n) {

@@ -25,7 +25,10 @@ h1 {
   z-index: -1;
 }
 
-/*.blurred-bg { opacity: 0; }*/
+.blurred-bg {
+  opacity: 0;
+}
+
 /* Fonts and Common Text Formatting*/
 body {
   font-family: benton-sans, sans-serif;
@@ -91,15 +94,15 @@ a:hover {
   align-items: center;
 }
 .contact-form h2 {
-  font-size: 5vw;
+  font-size: 4vw;
   margin: 1em 0 0.25em 0;
 }
 .contact-form p {
   font-family: adobe-caslon-pro, serif;
-  font-size: 2.5vw;
+  font-size: 2.2vw;
   width: 80%;
   text-align: center;
-  margin-bottom: 1em;
+  margin: auto;
 }
 .contact-form ul {
   font-size: 1.2vw;
@@ -122,7 +125,7 @@ a:hover {
   background: none;
   color: white;
 }
-.contact-form li a :hover {
+.contact-form li a:hover {
   color: #F3776D;
 }
 
@@ -134,7 +137,7 @@ form {
   margin: auto;
 }
 form label {
-  font-size: 2vw;
+  font-size: 1.8vw;
   margin: 0.5em;
 }
 form .field {
@@ -192,6 +195,10 @@ input[type=submit]:hover {
     font-size: 4vh;
   }
 
+  h2 {
+    font-size: 5vw !important;
+  }
+
   .content p, ol {
     font-size: 4vw;
   }
@@ -207,7 +214,7 @@ input[type=submit]:hover {
   }
 
   .ocf {
-    width: 70%;
+    width: 60% !important;
   }
 
   .ocf img {

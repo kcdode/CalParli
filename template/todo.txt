@@ -1,6 +1,0 @@
- - Donations page
- - Hyperlink to contact form from menu (scroll to bottom of page)
- - More prominent menu on top of home page (shrink as you scroll)
- - Fix mobile page bottom (the feet)
- - Previous policy
- - https://give.berkeley.edu/fund/?f=FU1211000
