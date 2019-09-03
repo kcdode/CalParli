@@ -5,8 +5,8 @@ $name = $_POST['name'];
 $email = $_POST['email'];
 $message = $_POST['message'];
 $from = "From: " . $email;
-$to = "kev.chang@berkeley.edu";
-$email_subject = 'Contact Form Submission';
+$to = "calparli@gmail.com";
+$email_subject = 'PDB Contact Form Submission';
 
 $body = "Name: $name\nE-mail: $email\n\nMessage:\n$message";
 //ini_set('SMTP', "smtp.gmail.com");
