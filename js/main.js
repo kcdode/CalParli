@@ -18,6 +18,7 @@ $(window).scroll(
 function SubmitFormData() {
 
 	var name = $("#name").val();
+
 	var email = $("#email").val();
 	var message = $("#message").val();
 
@@ -27,8 +28,9 @@ function SubmitFormData() {
 			function (data) {
 				$('#results').html(data);
 				$('#myForm')[0].reset();
+				alert('Thank you! We\'ll be in contact shortly. Please click \'OK\' to finish submitting. ');
+
 			});
-		alert('Thank you! We\'ll be in contact shortly. Please click \'OK\' to finish submitting. ');
 	} else {
 		alert('Form validation failed! Please try again');
 	}
