@@ -22,7 +22,8 @@ function SubmitFormData() {
 	var message = $("#message").val();
 
 	if (valForm(name, email, message)) {
-		$.post("js/mail.php", {name: name, email: email, message: message},
+		$.POST("js/mail.php",
+			{name: name, email: email, message: message},
 			function (data) {
 				$('#results').html(data);
 				$('#myForm')[0].reset();
