@@ -129,13 +129,6 @@ a:hover {
 .contact-form li {
   margin: 1em;
 }
-.contact-form li a {
-  background: none;
-  color: white;
-}
-.contact-form li a:hover {
-  color: #F3776D;
-}
 
 form {
   width: 80%;
