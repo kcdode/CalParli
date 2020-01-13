@@ -137,6 +137,10 @@
     width: 75%;
   }
 
+  .accordion p {
+    font-size: 1.4em;
+  }
+
   .panel {
     font-size: 1.4em;
   }
