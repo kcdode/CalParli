@@ -31,6 +31,11 @@
   letter-spacing: 0.5px;
 }
 
+@media screen and (max-width: 1200px) {
+  .content {
+    margin: 40vh 4em 6vh 4em;
+  }
+}
 /* Mobile Adjustments */
 @media screen and (orientation: portrait) {
   #logo {

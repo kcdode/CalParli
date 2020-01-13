@@ -40,9 +40,18 @@ $tertiary: #AADFF0;
 
 }
 
+@media screen and (max-width: 1200px) {
+	.content {
+		margin: 40vh 4em 6vh 4em;
+	}
+}
+
 
 /* Mobile Adjustments */
 @media screen and (orientation: portrait) {
+
+
+
 	#logo {
 		margin: 5vh auto 5vh auto;
 		width: 35%;
