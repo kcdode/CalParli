@@ -1,7 +1,7 @@
 .content {
 	margin: 50vh 7% 8vh 7%;
 	h3 {
-		font-size: 1em;
+		font-size: 2em;
 		font-family: benton-sans, sans-serif;
 		text-align: center;
 	}
@@ -18,15 +18,16 @@
 }
 
 .year {
-	width: 80%;
+	width: 65%;
 	background-color: #6AC9C9;
 	margin: 0 auto 0 auto;
 	padding: 24px 0 12px 0;
 	div {
 		width: 80%;
 		background-color: white;
+		font-size: 2em;
 		border: 1px solid white;
-		border-radius: 8px;
+		border-radius: 3px;
 		margin: auto;
 		letter-spacing: 3px
 	}
@@ -38,6 +39,7 @@
 
 .panel {
 	background-color: #6AC9C9;
+	font-size: 2em;
 	color: white;
 	cursor: pointer;
 	padding: 18px;
@@ -80,7 +82,7 @@
 }
 
 .accordion {
-	width: 80%;
+	width: 65%;
 	margin: 0 auto 0 auto;
 	div {
 		padding: 0 9px;
@@ -91,7 +93,7 @@
 	}
 	p {
 		font-family: benton-sans, sans-serif;
-		font-size: .6em;
+		font-size: 1.8em;
 		width: 95%;
 		margin-top: 16px;
 		text-align: left;
@@ -110,6 +112,7 @@
 
 	table {
 		width: 100%;
+		font-size: 1.8em;
 		border-collapse: collapse;
 		tr {
 			margin-top: 20px;
@@ -138,25 +141,39 @@
 
 }
 
+@media screen and (max-width: 1200px) {
+	.content p {
+		margin-top: .8em;
+	}
+	.accordion, .year {
+		width: 75%;
+	}
+	.panel {
+		font-size: 1.4em;
+	}
+}
 
 
-
-
-
-@media screen and (orientation: portrait) {
+@media screen and (max-width: 780px) {
 	.content {
+		font-size: 14px;
 		width: 100%;
 		margin: 20vh 0 0 0;
 	}
 
+	.year div {
+		font-size: 1.7em;
+	}
+
 	.year, .accordion {
 		width: 90%;
-		font-size: 1.5em;
+		//font-size: 1.3em;
 	}
 
 	.accordion {
-		p {
-			font-size: 1em; }
+		p, table {
+			font-size: 1.3em;
+		}
 
 		img {
 			max-width: 14em;
@@ -166,6 +183,12 @@
 
 	.panel {
 		padding: 9px;
+		font-size: 1.5em;
+
+		+ div h3 {
+			font-size: 1.7em;
+			margin: .4em auto .4em auto;
+		}
 	}
 
 	.year {
@@ -175,6 +198,19 @@
 	.two {
 		padding: 18px 0 6px 0;
 	}
+}
 
+@media screen and (max-width: 480px) {
+	.content {
+		font-size: 12px;
+	}
 
+	.panel {
+		font-size: 1.4em;
+	}
+
+	h3 { //School-level award in panels
+		font-size: 1.3em;
+		margin: .2em auto .2em auto;
+	}
 }

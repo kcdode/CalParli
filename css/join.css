@@ -2,8 +2,8 @@
   margin: 50vh 7% 8vh 7%;
 }
 .content p {
-  width: 80%;
-  text-align: center;
+  width: 65%;
+  text-align: justify;
   margin: 1em auto 1em auto;
 }
 
@@ -76,6 +76,9 @@
 @media screen and (max-width: 480px) {
   .content {
     margin-top: 15vh;
+  }
+  .content p {
+    width: 80%;
   }
 }
 

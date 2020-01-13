@@ -1,10 +1,10 @@
 .content {
-  margin: 60vh 7% 8vh 7%;
+  margin: 60vh 15em 8vh 15em;
 }
 
 #logo {
-  width: 30%;
-  margin: 8vh auto 8vh auto;
+  width: 25%;
+  margin: 8vh auto 6vh auto;
   display: block;
 }
 
@@ -25,7 +25,7 @@
   border-radius: 4px;
 }
 .article .blurb {
-  text-align: left;
+  text-align: justify;
   width: 50%;
   float: right;
   letter-spacing: 0.5px;
@@ -35,7 +35,7 @@
 @media screen and (orientation: portrait) {
   #logo {
     margin: 5vh auto 5vh auto;
-    width: 50%;
+    width: 35%;
   }
 
   .article {

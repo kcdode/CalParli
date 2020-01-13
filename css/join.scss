@@ -6,8 +6,8 @@ $tertiary: #AADFF0;
 	margin: 50vh 7% 8vh 7%;
 
 	p {
-		width: 80%;
-		text-align: center;
+		width: 65%;
+		text-align: justify;
 		margin: 1em auto 1em auto;
 	}
 }
@@ -90,6 +90,10 @@ $tertiary: #AADFF0;
 @media screen and (max-width: 480px) {
 	.content {
 		margin-top: 15vh;
+
+		p {
+			width: 80%;
+		}
 	}
 }
 

@@ -7,8 +7,8 @@ $tertiary: #AADFF0;
 }
 
 p {
-	width: 80%;
-	text-align: left;
+	width: 65%;
+	text-align: justify;
 	margin: 1em auto 1em auto;
 }
 
@@ -42,14 +42,18 @@ ol {
 }
 
 @media screen and (orientation: portrait) {
-
 	.content {
 		width: 100%;
 		margin: 20vh 0 0 0 ;
 	}
 
 	ol {
+		width: 65%;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.content p, ol {
 		width: 80%;
 	}
-
 }

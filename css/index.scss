@@ -3,12 +3,12 @@ $secondary: #F3776D;
 $tertiary: #AADFF0;
 
 .content {
-	margin: 60vh 7% 8vh 7%;
+	margin: 60vh 15em 8vh 15em;
 }
 
 #logo {
-	width: 30%;
-	margin: 8vh auto 8vh auto;
+	width: 25%;
+	margin: 8vh auto 6vh auto;
 	display: block;
 }
 
@@ -19,7 +19,6 @@ $tertiary: #AADFF0;
 	.picture {
 		float: left;
 		width: 45%;
-
 
 		img {
 			max-height: inherit;
@@ -32,7 +31,7 @@ $tertiary: #AADFF0;
 	}
 
 	.blurb {
-		text-align: left;
+		text-align: justify;
 		width: 50%;
 		float: right;
 		letter-spacing: .5px;
@@ -46,7 +45,7 @@ $tertiary: #AADFF0;
 @media screen and (orientation: portrait) {
 	#logo {
 		margin: 5vh auto 5vh auto;
-		width: 50%;
+		width: 35%;
 	}
 
 	.article {
