@@ -3,7 +3,7 @@
   margin: 50vh 7% 8vh 7%;
 }
 .content h3 {
-  font-size: 2em;
+  font-size: 1.8em;
   font-family: benton-sans, sans-serif;
   text-align: center;
 }
@@ -89,7 +89,7 @@
 }
 .accordion p {
   font-family: benton-sans, sans-serif;
-  font-size: 1.8em;
+  font-size: 1.55em;
   width: 95%;
   margin-top: 16px;
   text-align: left;
@@ -106,7 +106,7 @@
 }
 .accordion table {
   width: 100%;
-  font-size: 1.8em;
+  font-size: 1.55em;
   border-collapse: collapse;
 }
 .accordion table tr {
