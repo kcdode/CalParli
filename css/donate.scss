@@ -3,11 +3,12 @@ $secondary: #F3776D;
 $tertiary: #AADFF0;
 
 .content {
-	margin: 44vh 7% 8vh 7%;
+	margin: 44vh 15em 8vh 15em;
 }
 
 p {
 	width: 65%;
+	line-height: 1.5;
 	text-align: justify;
 	margin: 1em auto 1em auto;
 }
@@ -17,6 +18,7 @@ ol {
 		text-align: left;
 	}
 	width: 40%;
+	line-height: 1.5;
 	margin: auto;
 	font-family: adobe-caslon-pro, serif;
 	/*font-size: 2vw;*/
