@@ -31,6 +31,9 @@
   float: right;
   letter-spacing: 0.5px;
 }
+.article .blurb h2 {
+  text-align: left;
+}
 
 @media screen and (max-width: 1200px) {
   .content {
